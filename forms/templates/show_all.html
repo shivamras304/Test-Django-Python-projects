@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Show All Entries</title>
+	<style>
+			body {
+				background-color: yellow;
+			}
+		</style>
+</head>
+<body>
+<!-- 
+First Name : {{data.firstname}}<br>
+Last Name : {{data.lastname}}<br> -->
+
+All Student Entries : <br><br>
+<table border="2">
+	<tr>
+		<th>First Name</th>
+		<th>Last Name</th>
+	</tr>
+
+	{% for dt in data %}
+	<tr>
+		<th>{{ dt.firstname }}</th>
+		<th>{{ dt.lastname }}</th>
+	</tr>
+	{% endfor %}
+	
+</table>
+
+
+</body>
+</html>
